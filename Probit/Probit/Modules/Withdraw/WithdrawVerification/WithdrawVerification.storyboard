@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Medium</string>
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Withdraw Verification View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WithdrawVerificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="WithdrawVerificationViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-U5-xdw">
+                                <rect key="frame" x="51.5" y="248" width="311" height="132.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_u2f_device" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-Y8-dhR">
+                                        <rect key="frame" x="125.5" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S2-ff-Zut">
+                                        <rect key="frame" x="35.5" y="66" width="240" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="OtS-Yl-kDK"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U2F hardware key" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ0-xU-aUR">
+                                        <rect key="frame" x="88.5" y="90" width="134" height="19.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="16"/>
+                                        <color key="textColor" name="color_282828_fafafa"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect the U2F key to the device." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fla-0u-C5s">
+                                        <rect key="frame" x="42" y="115.5" width="227.5" height="17"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                        <color key="textColor" name="color_7b7b7b"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="rae-Ia-7fz"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyb-RB-qa9">
+                                <rect key="frame" x="0.0" y="796" width="414" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-9L-ktU" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Nac-T9-CKf"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doVerify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQg-HQ-cRo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RS3-9L-ktU" firstAttribute="leading" secondItem="hyb-RB-qa9" secondAttribute="leading" constant="16" id="9eq-Ef-wY5"/>
+                                    <constraint firstItem="RS3-9L-ktU" firstAttribute="top" secondItem="hyb-RB-qa9" secondAttribute="top" id="RSi-gH-8dp"/>
+                                    <constraint firstAttribute="trailing" secondItem="RS3-9L-ktU" secondAttribute="trailing" constant="16" id="oU3-zG-nhd"/>
+                                    <constraint firstAttribute="bottom" secondItem="RS3-9L-ktU" secondAttribute="bottom" constant="10" id="zCU-HZ-a7I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_background_view"/>
+                        <constraints>
+                            <constraint firstItem="Ibz-U5-xdw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="0qZ-NH-n5T"/>
+                            <constraint firstItem="hyb-RB-qa9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9h7-Rv-q54"/>
+                            <constraint firstItem="hyb-RB-qa9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZQ-w0-wIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hyb-RB-qa9" secondAttribute="bottom" id="qfp-CF-yu9"/>
+                            <constraint firstItem="Ibz-U5-xdw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDe-at-SaV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="desDeviceLabel" destination="fla-0u-C5s" id="glb-wp-Vrq"/>
+                        <outlet property="deviceLabel" destination="LZ0-xU-aUR" id="n5o-1d-5wu"/>
+                        <outlet property="imgDevice" destination="MGd-Y8-dhR" id="dEs-WL-ceZ"/>
+                        <outlet property="verifyButton" destination="RS3-9L-ktU" id="gW9-rc-4xT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_u2f_device" width="60" height="60"/>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_7b7b7b">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_background_view">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

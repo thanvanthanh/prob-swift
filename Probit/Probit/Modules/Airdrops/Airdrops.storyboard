@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Airdrops View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AirdropsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AirdropsViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uds-k1-sJ2">
+                                <rect key="frame" x="0.0" y="48" width="414" height="63"/>
+                                <subviews>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJ8-ra-mZL">
+                                        <rect key="frame" x="155" y="19.5" width="104" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-lY-LI7">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="92n-ER-cCH"/>
+                                                    <constraint firstAttribute="width" constant="52" id="UbM-tT-plA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="10"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Active"/>
+                                                <connections>
+                                                    <action selector="doSelectActive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kw0-ds-RbQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw0-vd-GUL">
+                                                <rect key="frame" x="52" y="0.0" width="52" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="Mmb-Af-wQK"/>
+                                                    <constraint firstAttribute="height" constant="24" id="pHn-RA-n0g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="10"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Ended"/>
+                                                <connections>
+                                                    <action selector="doSelectEnded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHB-2O-UHD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UJ8-ra-mZL" firstAttribute="centerY" secondItem="uds-k1-sJ2" secondAttribute="centerY" id="I5V-fH-swf"/>
+                                    <constraint firstAttribute="height" constant="63" id="W2Q-L1-7ed"/>
+                                    <constraint firstItem="UJ8-ra-mZL" firstAttribute="centerX" secondItem="uds-k1-sJ2" secondAttribute="centerX" id="fUb-7N-kZV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3P-Zi-YKe" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="111" width="414" height="751"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_background_view"/>
+                        <constraints>
+                            <constraint firstItem="d3P-Zi-YKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ERd-qO-k6Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3P-Zi-YKe" secondAttribute="trailing" id="KmC-R5-wJz"/>
+                            <constraint firstItem="d3P-Zi-YKe" firstAttribute="top" secondItem="uds-k1-sJ2" secondAttribute="bottom" id="XTL-kV-uXF"/>
+                            <constraint firstItem="uds-k1-sJ2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bGJ-qG-Ij6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uds-k1-sJ2" secondAttribute="trailing" id="g6r-At-mPR"/>
+                            <constraint firstItem="uds-k1-sJ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ssd-fD-jRL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d3P-Zi-YKe" secondAttribute="bottom" id="uaY-z5-2VV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeTab" destination="L9f-lY-LI7" id="Ad6-Gg-U6q"/>
+                        <outlet property="endTab" destination="Kw0-vd-GUL" id="Kqb-5Z-i7a"/>
+                        <outlet property="pageViewController" destination="d3P-Zi-YKe" id="rE6-m4-h0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_background_view">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

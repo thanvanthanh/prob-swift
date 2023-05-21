@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--VerifyOTP To Withdraw View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VerifyOTPToWithdrawViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="VerifyOTPToWithdrawViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caC-u8-Dgm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_email" translatesAutoresizingMaskIntoConstraints="NO" id="lBD-Ap-gmM">
+                                <rect key="frame" x="177" y="142" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqA-uo-yg7">
+                                <rect key="frame" x="188" y="218" width="38" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" name="color_4231c8_6f6ff7"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-7W-Kn2">
+                                <rect key="frame" x="191" y="263.5" width="32.5" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong OTP entered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70x-XG-1gw">
+                                <rect key="frame" x="16" y="374.5" width="382" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.36470588240000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-sM-XhY">
+                                <rect key="frame" x="0.0" y="48" width="414" height="734"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-7f-sdk">
+                                <rect key="frame" x="30" y="301.5" width="354" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="56" id="Kt4-8v-5mx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX9-uY-cwT" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="782" width="382" height="56"/>
+                                <color key="backgroundColor" name="color_4231c8_6f6ff7"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="h2I-ZF-HKu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFPro-Semibold" family="SF Pro" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verifyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ro-57-RpC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="va0-eZ-Kn0"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="pOU-7f-sdk" firstAttribute="leading" secondItem="va0-eZ-Kn0" secondAttribute="leading" constant="30" id="4jz-Vn-g79"/>
+                            <constraint firstItem="fXe-7W-Kn2" firstAttribute="top" secondItem="UqA-uo-yg7" secondAttribute="bottom" constant="26" id="AuX-tJ-GGo"/>
+                            <constraint firstItem="lBD-Ap-gmM" firstAttribute="centerX" secondItem="va0-eZ-Kn0" secondAttribute="centerX" id="BX8-yb-Lhc"/>
+                            <constraint firstItem="va0-eZ-Kn0" firstAttribute="trailing" secondItem="70x-XG-1gw" secondAttribute="trailing" constant="16" id="DG2-KF-wgn"/>
+                            <constraint firstItem="cX9-uY-cwT" firstAttribute="leading" secondItem="caC-u8-Dgm" secondAttribute="leading" constant="16" id="HG5-UE-Vcc"/>
+                            <constraint firstItem="va0-eZ-Kn0" firstAttribute="bottom" secondItem="cX9-uY-cwT" secondAttribute="bottom" constant="24" id="OKl-AI-RCw"/>
+                            <constraint firstItem="qiP-sM-XhY" firstAttribute="leading" secondItem="va0-eZ-Kn0" secondAttribute="leading" id="PTi-eM-Iv7"/>
+                            <constraint firstItem="UqA-uo-yg7" firstAttribute="centerX" secondItem="caC-u8-Dgm" secondAttribute="centerX" id="Phl-NY-OEV"/>
+                            <constraint firstItem="UqA-uo-yg7" firstAttribute="top" secondItem="lBD-Ap-gmM" secondAttribute="bottom" constant="16" id="Q1w-Nm-4TL"/>
+                            <constraint firstItem="lBD-Ap-gmM" firstAttribute="top" secondItem="va0-eZ-Kn0" secondAttribute="top" constant="94" id="RWD-Pg-IxM"/>
+                            <constraint firstItem="fXe-7W-Kn2" firstAttribute="centerX" secondItem="va0-eZ-Kn0" secondAttribute="centerX" id="Rjp-tp-Tqb"/>
+                            <constraint firstItem="va0-eZ-Kn0" firstAttribute="trailing" secondItem="cX9-uY-cwT" secondAttribute="trailing" constant="16" id="WxS-Dx-fFW"/>
+                            <constraint firstItem="va0-eZ-Kn0" firstAttribute="trailing" secondItem="qiP-sM-XhY" secondAttribute="trailing" id="aA8-8e-bZ6"/>
+                            <constraint firstItem="70x-XG-1gw" firstAttribute="leading" secondItem="va0-eZ-Kn0" secondAttribute="leading" constant="16" id="aKn-fj-rqm"/>
+                            <constraint firstItem="qiP-sM-XhY" firstAttribute="top" secondItem="va0-eZ-Kn0" secondAttribute="top" id="aZO-Ig-ZkY"/>
+                            <constraint firstItem="70x-XG-1gw" firstAttribute="top" secondItem="pOU-7f-sdk" secondAttribute="bottom" constant="17" id="kNo-jF-gi1"/>
+                            <constraint firstItem="cX9-uY-cwT" firstAttribute="top" secondItem="qiP-sM-XhY" secondAttribute="bottom" id="paF-ZQ-Nx4"/>
+                            <constraint firstItem="pOU-7f-sdk" firstAttribute="top" secondItem="fXe-7W-Kn2" secondAttribute="bottom" constant="21" id="yDd-tA-k1F"/>
+                            <constraint firstItem="va0-eZ-Kn0" firstAttribute="trailing" secondItem="pOU-7f-sdk" secondAttribute="trailing" constant="30" id="zQP-hS-Ndy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="qiP-sM-XhY" id="BZU-8a-7lF"/>
+                        <outlet property="bottomButtonConstraint" destination="OKl-AI-RCw" id="Rks-g0-ZPb"/>
+                        <outlet property="contentLabel" destination="fXe-7W-Kn2" id="qGo-dj-SD9"/>
+                        <outlet property="errorLabel" destination="70x-XG-1gw" id="z1b-uY-xOI"/>
+                        <outlet property="otpTitle" destination="UqA-uo-yg7" id="x2r-Xe-xAf"/>
+                        <outlet property="otpView" destination="pOU-7f-sdk" id="JDW-GG-JQN"/>
+                        <outlet property="verifyButton" destination="cX9-uY-cwT" id="Aci-1i-fNq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_email" width="60" height="60"/>
+        <namedColor name="color_4231c8_6f6ff7">
+            <color red="0.25882352941176473" green="0.19215686274509805" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

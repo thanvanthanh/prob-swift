@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ExchangeDetailViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-Jn-aw1" customClass="ExchangeInfo" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Y36-rB-euT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAr-72-d4W">
+                                <rect key="frame" x="0.0" y="120" width="414" height="6"/>
+                                <color key="backgroundColor" name="color_f2f2f2_000000"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="Mgc-7y-cl5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNr-3i-XJh" customClass="MenuBarView" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="126" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gZe-KP-X07"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpB-Zz-cuE" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="170" width="414" height="626"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j4F-sZ-4wR">
+                                <rect key="frame" x="16" y="796" width="382" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-bB-UYH" customClass="HighlightButon" customModule="Probit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="56"/>
+                                        <color key="backgroundColor" red="0.070588235294117646" green="0.76862745098039209" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYO-Km-VGT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-eD-IP1" customClass="HighlightButon" customModule="Probit" customModuleProvider="target">
+                                        <rect key="frame" x="196" y="0.0" width="186" height="56"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.36470588235294116" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sellAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxF-Y3-Mhf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="o4k-av-7Fb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAr-72-d4W" secondAttribute="trailing" id="6ka-qc-4I6"/>
+                            <constraint firstItem="qpB-Zz-cuE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6oH-gV-wNY"/>
+                            <constraint firstItem="j4F-sZ-4wR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AhD-Kt-chE"/>
+                            <constraint firstItem="j4F-sZ-4wR" firstAttribute="top" secondItem="qpB-Zz-cuE" secondAttribute="bottom" id="Amq-lQ-NDb"/>
+                            <constraint firstItem="eAr-72-d4W" firstAttribute="top" secondItem="UQT-Jn-aw1" secondAttribute="bottom" id="BLB-qv-FBA"/>
+                            <constraint firstItem="UQT-Jn-aw1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lez-Qo-6NF"/>
+                            <constraint firstItem="eAr-72-d4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MGp-Ji-fCo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j4F-sZ-4wR" secondAttribute="trailing" constant="16" id="TOe-pn-3yc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qpB-Zz-cuE" secondAttribute="trailing" id="TnC-tl-B0k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UQT-Jn-aw1" secondAttribute="trailing" id="UfE-Je-bs7"/>
+                            <constraint firstItem="kNr-3i-XJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZQJ-bH-5iD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j4F-sZ-4wR" secondAttribute="bottom" constant="10" id="c1I-cI-jMk"/>
+                            <constraint firstItem="UQT-Jn-aw1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iPa-l1-3gz"/>
+                            <constraint firstItem="qpB-Zz-cuE" firstAttribute="top" secondItem="kNr-3i-XJh" secondAttribute="bottom" id="mc1-On-0jK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNr-3i-XJh" secondAttribute="trailing" id="qKL-uK-H1u"/>
+                            <constraint firstItem="kNr-3i-XJh" firstAttribute="top" secondItem="eAr-72-d4W" secondAttribute="bottom" id="uQx-rk-e87"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buyButton" destination="Cc5-bB-UYH" id="2W8-zq-f1n"/>
+                        <outlet property="infoView" destination="UQT-Jn-aw1" id="wHo-Bj-6iZ"/>
+                        <outlet property="menuBarView" destination="kNr-3i-XJh" id="pyb-ai-VoR"/>
+                        <outlet property="pageViewController" destination="qpB-Zz-cuE" id="Xrx-ED-kRE"/>
+                        <outlet property="sellButton" destination="t9h-eD-IP1" id="gZZ-FC-uqB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_f2f2f2_000000">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

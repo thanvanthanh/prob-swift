@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stake Details View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StakeDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="StakeDetailsViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oR-m8-IyW" customClass="MenuBarView" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="1Yq-Wr-YQc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abr-Ro-vEe" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="abr-Ro-vEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M1W-Jt-cGu"/>
+                            <constraint firstItem="abr-Ro-vEe" firstAttribute="top" secondItem="0oR-m8-IyW" secondAttribute="bottom" id="Mr6-V7-Xlj"/>
+                            <constraint firstItem="0oR-m8-IyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ddq-aV-oxD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0oR-m8-IyW" secondAttribute="trailing" id="hPm-DI-EUs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="abr-Ro-vEe" secondAttribute="bottom" id="mdg-g5-gIh"/>
+                            <constraint firstItem="0oR-m8-IyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nNa-O1-wU9"/>
+                            <constraint firstItem="abr-Ro-vEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nef-1A-FPC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="abr-Ro-vEe" secondAttribute="trailing" id="xEQ-i1-oyC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuBarView" destination="0oR-m8-IyW" id="Bu0-rp-3sc"/>
+                        <outlet property="pageViewController" destination="abr-Ro-vEe" id="Sgz-oc-sUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

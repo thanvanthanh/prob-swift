@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroDataSearchView" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="introSearchView" destination="3SD-Mu-rTW" id="YUg-Zs-uZN"/>
+                <outlet property="layoutSpaceWhenShowKeyboard" destination="w8X-33-IRo" id="WcR-w1-khO"/>
+                <outlet property="noDataSearchView" destination="uTa-p3-sjZ" id="RHP-2a-UwG"/>
+                <outlet property="noResultLabel" destination="FJ0-e3-1B3" id="0J3-jo-ASt"/>
+                <outlet property="searchIntroLabel" destination="Ecx-NY-xMv" id="nbK-cv-rPK"/>
+                <outlet property="searchMessageLabel" destination="o0c-mR-upm" id="1sK-Gx-gkH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="693" height="859"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3SD-Mu-rTW">
+                    <rect key="frame" x="0.0" y="340.66666666666669" width="693" height="88.333333333333314"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e9h-Fg-RZZ">
+                            <rect key="frame" x="329.66666666666669" y="0.0" width="34" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="2na-0O-yyh"/>
+                                <constraint firstAttribute="width" constant="34" id="NiG-fq-J45"/>
+                            </constraints>
+                            <imageReference key="image" image="icon-search-exchange" renderingMode="hierarchical-single">
+                                <hierarchicalColors>
+                                    <color red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color systemColor="secondaryLabelColor"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsX-IK-UF9">
+                            <rect key="frame" x="226.66666666666663" y="34" width="240" height="16"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="rlP-Kh-nqD"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search ProBit Global." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecx-NY-xMv">
+                            <rect key="frame" x="269.66666666666669" y="50" width="153.66666666666669" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="16"/>
+                            <color key="textColor" name="color_424242"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6be-XQ-Ecp">
+                            <rect key="frame" x="226.66666666666663" y="69.333333333333314" width="240" height="2"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="jkD-Gf-sIM"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find symbol or name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0c-mR-upm">
+                            <rect key="frame" x="277.33333333333331" y="71.333333333333314" width="138.33333333333331" height="17"/>
+                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                            <color key="textColor" name="color_c8c8c8"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uTa-p3-sjZ">
+                    <rect key="frame" x="0.0" y="275" width="693" height="155"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-tj-O5J">
+                            <rect key="frame" x="286.66666666666669" y="0.0" width="120" height="120"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="iia-YG-X56"/>
+                                <constraint firstAttribute="height" constant="120" id="w3o-Hw-GID"/>
+                            </constraints>
+                            <imageReference key="image" image="icon_no-search-result" renderingMode="hierarchical-single">
+                                <hierarchicalColors>
+                                    <color red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color systemColor="secondaryLabelColor"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1n-6M-FvX">
+                            <rect key="frame" x="226.66666666666663" y="120" width="240" height="16"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="mQE-ZV-oqW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFI-JJ-PBO">
+                            <rect key="frame" x="226.66666666666663" y="136" width="240" height="2"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="NgE-vb-4dS"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search results found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ0-e3-1B3">
+                            <rect key="frame" x="269.66666666666669" y="138" width="154" height="17"/>
+                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                            <color key="textColor" name="color_c8c8c8"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbv-Pb-g00">
+                    <rect key="frame" x="0.0" y="429" width="693" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZH8-1x-HEP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-qi-On2">
+                    <rect key="frame" x="0.0" y="429" width="693" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Gxx-Uj-iL1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uTa-p3-sjZ" firstAttribute="bottom" secondItem="Sbv-Pb-g00" secondAttribute="bottom" id="1OV-Nh-REp"/>
+                <constraint firstItem="Sbv-Pb-g00" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2GN-Vh-2A6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3SD-Mu-rTW" secondAttribute="trailing" id="91M-cf-Pe3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uTa-p3-sjZ" secondAttribute="trailing" id="POU-YW-5Nf"/>
+                <constraint firstAttribute="trailing" secondItem="GdL-qi-On2" secondAttribute="trailing" id="UBJ-30-IeC"/>
+                <constraint firstItem="GdL-qi-On2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XcJ-7v-x4s"/>
+                <constraint firstItem="GdL-qi-On2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aBb-el-8Cl"/>
+                <constraint firstItem="Sbv-Pb-g00" firstAttribute="top" secondItem="3SD-Mu-rTW" secondAttribute="bottom" id="eHl-Lr-CKH"/>
+                <constraint firstItem="uTa-p3-sjZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jj8-xE-EBj"/>
+                <constraint firstAttribute="trailing" secondItem="Sbv-Pb-g00" secondAttribute="trailing" id="pkb-lW-hu2"/>
+                <constraint firstItem="3SD-Mu-rTW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u27-Uh-kfI"/>
+                <constraint firstItem="GdL-qi-On2" firstAttribute="top" secondItem="Sbv-Pb-g00" secondAttribute="top" id="w8X-33-IRo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="363.84615384615381" y="-16.706161137440759"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-search-exchange" width="34" height="34"/>
+        <image name="icon_no-search-result" width="120" height="120"/>
+        <namedColor name="color_424242">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_c8c8c8">
+            <color red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

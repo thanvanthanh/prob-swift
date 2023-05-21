@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Photo Is Clear View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PhotoIsClearViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PhotoIsClearViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-aj-rEt">
+                                <rect key="frame" x="32" y="83" width="350" height="259"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNk-go-Mq2">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="207"/>
+                                        <color key="backgroundColor" name="color_c8c8c8_646464"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="207" id="6C7-of-mkp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-zs-cHU">
+                                        <rect key="frame" x="0.0" y="223" width="350" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="5fg-4r-rmu"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show capture guide">
+                                            <color key="titleColor" name="color_4231c8_6f6ff7"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doShowCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDA-RI-clF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UZ-1N-MPq">
+                                <rect key="frame" x="0.0" y="727" width="414" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the photo clear?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYf-U6-dl7">
+                                        <rect key="frame" x="16" y="0.0" width="167" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                                        <color key="textColor" name="color_282828_fafafa"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure that your face is clearly visible in the photo." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akf-ec-Yiu">
+                                        <rect key="frame" x="16" y="32" width="382" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" name="color_7b7b7b_b6b6b6"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="axK-Rn-Y0q">
+                                        <rect key="frame" x="16" y="69" width="382" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x7-Ah-I3I" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="185" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="lEL-Yy-5h5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Retake Photo">
+                                                    <color key="titleColor" name="color_b6b6b6_7b7b7b"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="color_b6b6b6_7b7b7b"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doRetakePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bM4-bG-J6d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of5-Bo-6uo" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="0.0" width="185" height="56"/>
+                                                <color key="backgroundColor" name="color_4231c8_6f6ff7"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="ZK1-SG-9jj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Confirm">
+                                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="doConfirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERc-I3-oVe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="sNJ-uF-Cd7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="axK-Rn-Y0q" secondAttribute="trailing" constant="16" id="4Ik-k4-T9m"/>
+                                    <constraint firstItem="bYf-U6-dl7" firstAttribute="leading" secondItem="5UZ-1N-MPq" secondAttribute="leading" constant="16" id="4YG-WV-d6G"/>
+                                    <constraint firstItem="bYf-U6-dl7" firstAttribute="top" secondItem="5UZ-1N-MPq" secondAttribute="top" id="4dL-Zg-ou5"/>
+                                    <constraint firstItem="axK-Rn-Y0q" firstAttribute="top" secondItem="Akf-ec-Yiu" secondAttribute="bottom" constant="20" id="6EH-st-Pgm"/>
+                                    <constraint firstItem="Akf-ec-Yiu" firstAttribute="top" secondItem="bYf-U6-dl7" secondAttribute="bottom" constant="8" id="9qS-OE-Yxy"/>
+                                    <constraint firstItem="Akf-ec-Yiu" firstAttribute="leading" secondItem="5UZ-1N-MPq" secondAttribute="leading" constant="16" id="LW1-UD-ZXS"/>
+                                    <constraint firstAttribute="bottom" secondItem="axK-Rn-Y0q" secondAttribute="bottom" id="W9K-ZB-GTv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Akf-ec-Yiu" secondAttribute="trailing" constant="16" id="l0p-HL-Xhu"/>
+                                    <constraint firstItem="axK-Rn-Y0q" firstAttribute="leading" secondItem="5UZ-1N-MPq" secondAttribute="leading" constant="16" id="xS6-lE-c5x"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="MfY-aj-rEt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="6bF-id-nHt"/>
+                            <constraint firstItem="MfY-aj-rEt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="EgV-bI-YMh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5UZ-1N-MPq" secondAttribute="bottom" constant="10" id="S63-Sw-zyV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MfY-aj-rEt" secondAttribute="trailing" constant="32" id="Z3G-c7-D0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5UZ-1N-MPq" secondAttribute="trailing" id="aeM-so-C1b"/>
+                            <constraint firstItem="5UZ-1N-MPq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l1D-jx-Tv9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="captureGuide" destination="w2D-zs-cHU" id="BJP-aX-pxC"/>
+                        <outlet property="confirmBtn" destination="Of5-Bo-6uo" id="iKc-3v-bVS"/>
+                        <outlet property="heightImageView" destination="6C7-of-mkp" id="H8a-IE-c4B"/>
+                        <outlet property="heightTopStackView" destination="6bF-id-nHt" id="hM3-Kz-Fja"/>
+                        <outlet property="imageBanner" destination="jNk-go-Mq2" id="IpV-gG-9CZ"/>
+                        <outlet property="isPhotoLabel" destination="bYf-U6-dl7" id="otv-xW-tNW"/>
+                        <outlet property="makeSureLabel" destination="Akf-ec-Yiu" id="uMi-up-u1x"/>
+                        <outlet property="marginLeftStackView" destination="EgV-bI-YMh" id="Wem-Lh-WC9"/>
+                        <outlet property="marginRightStack" destination="Z3G-c7-D0b" id="wu5-7R-MXB"/>
+                        <outlet property="retakeBtn" destination="2x7-Ah-I3I" id="Pml-Ep-Hsj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_4231c8_6f6ff7">
+            <color red="0.25882352941176473" green="0.19215686274509805" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_7b7b7b_b6b6b6">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_b6b6b6_7b7b7b">
+            <color red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_c8c8c8_646464">
+            <color red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

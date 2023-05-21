@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewCoinSection" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="newcoinsLabel" destination="h7m-iK-kBZ" id="vhm-ft-IWR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="563" height="470"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfq-HN-gMq">
+                    <rect key="frame" x="0.0" y="48" width="563" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="24" id="2fo-zU-3Vd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7m-iK-kBZ">
+                    <rect key="frame" x="10" y="72" width="543" height="344"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                    <color key="textColor" name="color_282828_fafafa"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h7m-iK-kBZ" secondAttribute="bottom" constant="20" id="2HP-JR-pGw"/>
+                <constraint firstItem="h7m-iK-kBZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="LAI-VH-igc"/>
+                <constraint firstItem="jfq-HN-gMq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TRT-Bf-GhY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jfq-HN-gMq" secondAttribute="trailing" id="jQg-rf-csf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h7m-iK-kBZ" secondAttribute="trailing" constant="10" id="mqI-8k-Ay1"/>
+                <constraint firstItem="h7m-iK-kBZ" firstAttribute="top" secondItem="jfq-HN-gMq" secondAttribute="bottom" id="pSW-DS-jA8"/>
+                <constraint firstItem="jfq-HN-gMq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wHQ-iA-09p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="245.6521739130435" y="-66.294642857142861"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

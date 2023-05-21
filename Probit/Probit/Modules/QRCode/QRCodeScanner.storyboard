@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Medium</string>
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Code Scanner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="QRCodeScannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="QRCodeScannerViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSt-Ru-CZx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clr-Tp-3kn">
+                                        <rect key="frame" x="0.0" y="585.66666666666663" width="375" height="192.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR code scan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9w-KX-kUl">
+                                                <rect key="frame" x="16" y="24" width="343" height="24"/>
+                                                <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="20"/>
+                                                <color key="textColor" name="color_282828_fafafa"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR code to input address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoP-xh-27Y">
+                                                <rect key="frame" x="16" y="56.000000000000007" width="343" height="19.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="16"/>
+                                                <color key="textColor" name="color_282828_fafafa"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input address manually" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXg-zb-Hdm" customClass="UnderlinedLabel" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="85.333333333333371" width="343" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                                <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFT-Xs-VnW" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="126.33333333333337" width="343" height="56"/>
+                                                <color key="backgroundColor" name="color_4231c8_6f6ff7"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="EiH-Fm-iOe"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Allow camera">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="requestCameraPermission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIF-SX-cav"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IXg-zb-Hdm" secondAttribute="trailing" constant="16" id="1hm-vn-E6O"/>
+                                            <constraint firstAttribute="bottom" secondItem="rFT-Xs-VnW" secondAttribute="bottom" constant="10" id="4CH-OQ-wQC"/>
+                                            <constraint firstItem="rFT-Xs-VnW" firstAttribute="top" secondItem="IXg-zb-Hdm" secondAttribute="bottom" constant="24" id="6L4-HY-xwB"/>
+                                            <constraint firstItem="rFT-Xs-VnW" firstAttribute="leading" secondItem="clr-Tp-3kn" secondAttribute="leading" constant="16" id="FvL-wi-Tbe"/>
+                                            <constraint firstAttribute="trailing" secondItem="zoP-xh-27Y" secondAttribute="trailing" constant="16" id="Z1b-tB-qZm"/>
+                                            <constraint firstItem="IXg-zb-Hdm" firstAttribute="top" secondItem="zoP-xh-27Y" secondAttribute="bottom" constant="10" id="cWo-Vg-pkT"/>
+                                            <constraint firstItem="o9w-KX-kUl" firstAttribute="leading" secondItem="clr-Tp-3kn" secondAttribute="leading" constant="16" id="ill-rF-lCs"/>
+                                            <constraint firstAttribute="trailing" secondItem="rFT-Xs-VnW" secondAttribute="trailing" constant="16" id="mOq-5T-L6c"/>
+                                            <constraint firstItem="zoP-xh-27Y" firstAttribute="leading" secondItem="clr-Tp-3kn" secondAttribute="leading" constant="16" id="muS-mw-2gv"/>
+                                            <constraint firstItem="o9w-KX-kUl" firstAttribute="top" secondItem="clr-Tp-3kn" secondAttribute="top" constant="24" id="pXK-eO-s0f"/>
+                                            <constraint firstItem="zoP-xh-27Y" firstAttribute="top" secondItem="o9w-KX-kUl" secondAttribute="bottom" constant="8" id="qSt-wv-BTJ"/>
+                                            <constraint firstItem="IXg-zb-Hdm" firstAttribute="leading" secondItem="clr-Tp-3kn" secondAttribute="leading" constant="16" id="qeG-QO-gMi"/>
+                                            <constraint firstAttribute="trailing" secondItem="o9w-KX-kUl" secondAttribute="trailing" constant="16" id="rpS-uj-idy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3H-rm-5zd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="585.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_camera" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-fl-2e4">
+                                                <rect key="frame" x="109" y="214.33333333333337" width="157" height="157"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9I1-fl-2e4" secondAttribute="height" id="Rm7-sT-dbo"/>
+                                                    <constraint firstAttribute="width" constant="157" id="lni-Ns-Fz2"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9I1-fl-2e4" firstAttribute="centerX" secondItem="T3H-rm-5zd" secondAttribute="centerX" id="A3K-Tq-lza"/>
+                                            <constraint firstItem="9I1-fl-2e4" firstAttribute="centerY" secondItem="T3H-rm-5zd" secondAttribute="centerY" id="sYy-rJ-h4M"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="clr-Tp-3kn" firstAttribute="top" secondItem="T3H-rm-5zd" secondAttribute="bottom" id="0Cu-rL-tJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3H-rm-5zd" secondAttribute="trailing" id="C4J-Sy-aFG"/>
+                                    <constraint firstItem="clr-Tp-3kn" firstAttribute="leading" secondItem="xSt-Ru-CZx" secondAttribute="leading" id="JwR-Jj-Rod"/>
+                                    <constraint firstAttribute="bottom" secondItem="clr-Tp-3kn" secondAttribute="bottom" id="KYZ-I2-Bpm"/>
+                                    <constraint firstItem="T3H-rm-5zd" firstAttribute="top" secondItem="xSt-Ru-CZx" secondAttribute="top" id="WEA-FU-fIn"/>
+                                    <constraint firstItem="T3H-rm-5zd" firstAttribute="leading" secondItem="xSt-Ru-CZx" secondAttribute="leading" id="Xdg-Lm-Isd"/>
+                                    <constraint firstAttribute="trailing" secondItem="clr-Tp-3kn" secondAttribute="trailing" id="yuS-Oc-Zw9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgS-5d-HBI">
+                                <rect key="frame" x="0.0" y="47" width="375" height="765"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-xH-2qj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="632"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-s6-mQw" customClass="CornerView" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="206" width="343" height="220"/>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="wHg-Lq-D9f"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid QR code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi8-Ba-uJf">
+                                                <rect key="frame" x="16" y="442" width="343" height="53"/>
+                                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.80274730960264906" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="53" id="AcA-eH-98i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="20"/>
+                                                <color key="textColor" red="0.94901960784313721" green="0.36470588235294116" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="h6e-s6-mQw" firstAttribute="leading" secondItem="gMC-xH-2qj" secondAttribute="leading" constant="16" id="1di-Rq-elD"/>
+                                            <constraint firstAttribute="trailing" secondItem="bi8-Ba-uJf" secondAttribute="trailing" constant="16" id="2i4-YP-C8L"/>
+                                            <constraint firstItem="bi8-Ba-uJf" firstAttribute="top" secondItem="h6e-s6-mQw" secondAttribute="bottom" constant="16" id="F8r-Ns-1dt"/>
+                                            <constraint firstAttribute="trailing" secondItem="h6e-s6-mQw" secondAttribute="trailing" constant="16" id="iOI-uR-eBs"/>
+                                            <constraint firstItem="bi8-Ba-uJf" firstAttribute="leading" secondItem="gMC-xH-2qj" secondAttribute="leading" constant="16" id="pGf-En-BYV"/>
+                                            <constraint firstItem="h6e-s6-mQw" firstAttribute="centerY" secondItem="gMC-xH-2qj" secondAttribute="centerY" id="utb-fM-7V0"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position the QR code inside the box" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k72-Tx-pW4" customClass="UILabelPadded" customModule="Probit" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="632" width="343" height="53"/>
+                                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="0.80274730959999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="0iL-g6-ygr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gMC-xH-2qj" secondAttribute="trailing" id="0zD-FH-iAu"/>
+                                    <constraint firstItem="k72-Tx-pW4" firstAttribute="top" secondItem="gMC-xH-2qj" secondAttribute="bottom" id="H9c-ap-2Hi"/>
+                                    <constraint firstAttribute="trailing" secondItem="k72-Tx-pW4" secondAttribute="trailing" constant="16" id="asJ-k3-3Hn"/>
+                                    <constraint firstItem="gMC-xH-2qj" firstAttribute="top" secondItem="CgS-5d-HBI" secondAttribute="top" id="gEX-ae-yX5"/>
+                                    <constraint firstItem="k72-Tx-pW4" firstAttribute="leading" secondItem="CgS-5d-HBI" secondAttribute="leading" constant="16" id="u3P-8x-Cbr"/>
+                                    <constraint firstItem="gMC-xH-2qj" firstAttribute="leading" secondItem="CgS-5d-HBI" secondAttribute="leading" id="umZ-M3-jX8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k72-Tx-pW4" secondAttribute="bottom" constant="46" id="1C5-9Q-OP5"/>
+                            <constraint firstItem="xSt-Ru-CZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4pO-ja-ULz"/>
+                            <constraint firstItem="CgS-5d-HBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F54-zf-RaW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xSt-Ru-CZx" secondAttribute="trailing" id="Ntt-K1-T2K"/>
+                            <constraint firstItem="CgS-5d-HBI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R13-e1-Hc0"/>
+                            <constraint firstItem="xSt-Ru-CZx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SPM-V6-A4H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CgS-5d-HBI" secondAttribute="trailing" id="imf-rC-HB5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xSt-Ru-CZx" secondAttribute="bottom" id="j03-i0-KgU"/>
+                            <constraint firstAttribute="bottom" secondItem="CgS-5d-HBI" secondAttribute="bottom" id="vHf-eM-p9c"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="allowCameraButton" destination="rFT-Xs-VnW" id="02t-9G-BJs"/>
+                        <outlet property="contentScanView" destination="gMC-xH-2qj" id="Ugn-ZI-ZBZ"/>
+                        <outlet property="errorText" destination="bi8-Ba-uJf" id="FHx-0Q-sM7"/>
+                        <outlet property="inputAddressLabel" destination="IXg-zb-Hdm" id="LLP-qg-yhL"/>
+                        <outlet property="noticeText" destination="k72-Tx-pW4" id="RNN-nS-zse"/>
+                        <outlet property="permissionView" destination="xSt-Ru-CZx" id="EZI-ta-XO6"/>
+                        <outlet property="qrCodeTitle" destination="o9w-KX-kUl" id="doj-6X-h4n"/>
+                        <outlet property="scanAreaView" destination="h6e-s6-mQw" id="J16-PI-qXW"/>
+                        <outlet property="scanQrCodeLabel" destination="zoP-xh-27Y" id="0Ar-Aq-K4T"/>
+                        <outlet property="scanView" destination="CgS-5d-HBI" id="EUQ-m1-EwT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="62.807881773399018"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_camera" width="157" height="157"/>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_4231c8_6f6ff7">
+            <color red="0.25882352941176473" green="0.19215686274509805" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

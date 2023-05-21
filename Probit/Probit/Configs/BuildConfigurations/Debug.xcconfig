@@ -1,0 +1,18 @@
+//
+//  Debug.xcconfig
+//  Probit
+//
+//  Created by Thân Văn Thanh on 21/11/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "./Pods/Target Support Files/Pods-Probit/Pods-Probit.debug.xcconfig"
+
+PRODUCT_NAME = Probit(Dev)
+APP_NAME = Probit(Dev)
+PRODUCT_BUNDLE_IDENTIFIER = com.probit.app.ios.dev.global
+MARKETING_VERSION = 1.24
+CURRENT_PROJECT_VERSION = 137
+OTHER_SWIFT_FLAGS = -D ENDPOINT_DEBUG

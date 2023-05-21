@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselSection" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="WF1-Aa-TF5" id="o1b-Ei-c0x"/>
+                <outlet property="pageControl" destination="OdQ-3Z-6Jw" id="p0y-sz-h8B"/>
+                <outlet property="widthPage" destination="Uln-ab-3SC" id="hqM-ZC-6cr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="353"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="577-Fp-Am9">
+                    <rect key="frame" x="0.0" y="44" width="603" height="275"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cX-PI-Qfg">
+                            <rect key="frame" x="0.0" y="0.0" width="603" height="275"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-Aa-TF5" customClass="InfiniteCollectionView" customModule="InfiniteLayout">
+                                    <rect key="frame" x="10" y="0.0" width="583" height="163"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="WF1-Aa-TF5" secondAttribute="height" multiplier="354/99" priority="750" id="ys2-3f-OIN"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NaN-g2-eft">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skO-SD-od3">
+                                    <rect key="frame" x="0.0" y="163" width="603" height="104"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="750" constant="12" id="9b4-U7-yhf"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdQ-3Z-6Jw" customClass="PageControl" customModule="Probit" customModuleProvider="target">
+                                    <rect key="frame" x="258.5" y="267" width="86" height="8"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="8" id="9cs-6N-Yn5"/>
+                                        <constraint firstAttribute="width" constant="86" id="Uln-ab-3SC"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="OdQ-3Z-6Jw" firstAttribute="top" secondItem="skO-SD-od3" secondAttribute="bottom" id="0rG-ss-3NU"/>
+                                <constraint firstAttribute="trailing" secondItem="skO-SD-od3" secondAttribute="trailing" id="2sH-EP-q7y"/>
+                                <constraint firstItem="OdQ-3Z-6Jw" firstAttribute="centerX" secondItem="WF1-Aa-TF5" secondAttribute="centerX" id="56n-Mb-GKn"/>
+                                <constraint firstAttribute="trailing" secondItem="WF1-Aa-TF5" secondAttribute="trailing" constant="10" id="L4k-yV-tWM"/>
+                                <constraint firstItem="WF1-Aa-TF5" firstAttribute="top" secondItem="5cX-PI-Qfg" secondAttribute="top" id="PuI-iL-s10"/>
+                                <constraint firstItem="WF1-Aa-TF5" firstAttribute="leading" secondItem="5cX-PI-Qfg" secondAttribute="leading" constant="10" id="WsG-Nx-HJV"/>
+                                <constraint firstItem="skO-SD-od3" firstAttribute="top" secondItem="WF1-Aa-TF5" secondAttribute="bottom" id="Y6u-ZN-8OG"/>
+                                <constraint firstAttribute="bottom" secondItem="OdQ-3Z-6Jw" secondAttribute="bottom" id="rbu-Br-hla"/>
+                                <constraint firstItem="skO-SD-od3" firstAttribute="leading" secondItem="5cX-PI-Qfg" secondAttribute="leading" id="w1M-3u-18i"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="577-Fp-Am9" secondAttribute="trailing" id="CaH-Gu-IT0"/>
+                <constraint firstItem="577-Fp-Am9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fsQ-zH-Sd8"/>
+                <constraint firstItem="577-Fp-Am9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hUL-D3-0LM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="577-Fp-Am9" secondAttribute="bottom" id="lp4-Jg-giC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="274.63768115942031" y="-105.46875"/>
+        </view>
+    </objects>
+</document>

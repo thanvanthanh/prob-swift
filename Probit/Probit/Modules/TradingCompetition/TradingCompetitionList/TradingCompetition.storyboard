@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trading Competition View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TradingCompetitionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="TradingCompetitionViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNL-6Z-fk4" customClass="MenuBarView" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="uCW-dl-fpb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qm2-ej-IhP" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="91" width="414" height="771"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="Qm2-ej-IhP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1VY-i3-zVG"/>
+                            <constraint firstItem="Qm2-ej-IhP" firstAttribute="top" secondItem="JNL-6Z-fk4" secondAttribute="bottom" constant="-1" id="36s-KX-ZWu"/>
+                            <constraint firstItem="JNL-6Z-fk4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PTV-Uu-2ci"/>
+                            <constraint firstItem="Qm2-ej-IhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUu-pE-4R5"/>
+                            <constraint firstItem="JNL-6Z-fk4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zg5-Ls-2Ef"/>
+                            <constraint firstItem="JNL-6Z-fk4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cNM-qd-0UO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qm2-ej-IhP" secondAttribute="bottom" id="ihu-V2-xxZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuBarView" destination="JNL-6Z-fk4" id="YoH-5K-416"/>
+                        <outlet property="pageViewController" destination="Qm2-ej-IhP" id="yS2-Ro-6QL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

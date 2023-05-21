@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="mainStackView" destination="R9H-yg-GlB" id="YjQ-Ei-Ykc"/>
+                <outlet property="scrollView" destination="TuV-AJ-QYt" id="HbK-Mj-AQs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="669" height="495"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuV-AJ-QYt">
+                    <rect key="frame" x="0.0" y="48" width="669" height="413"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="R9H-yg-GlB">
+                            <rect key="frame" x="0.0" y="0.0" width="669" height="413"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="R9H-yg-GlB" firstAttribute="top" secondItem="TuV-AJ-QYt" secondAttribute="top" id="3hT-bu-XSz"/>
+                        <constraint firstItem="R9H-yg-GlB" firstAttribute="leading" secondItem="TuV-AJ-QYt" secondAttribute="leading" id="4kK-PX-2wv"/>
+                        <constraint firstAttribute="bottom" secondItem="R9H-yg-GlB" secondAttribute="bottom" id="IAb-zr-rrI"/>
+                        <constraint firstAttribute="trailing" secondItem="R9H-yg-GlB" secondAttribute="trailing" id="KKv-oX-TLg"/>
+                        <constraint firstItem="R9H-yg-GlB" firstAttribute="width" secondItem="TuV-AJ-QYt" secondAttribute="width" priority="750" id="SDa-i6-663"/>
+                        <constraint firstItem="R9H-yg-GlB" firstAttribute="height" secondItem="TuV-AJ-QYt" secondAttribute="height" id="nlt-Nu-lz5"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TuV-AJ-QYt" secondAttribute="trailing" id="KNb-M1-gxd"/>
+                <constraint firstItem="TuV-AJ-QYt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="R6N-HN-2lE"/>
+                <constraint firstItem="TuV-AJ-QYt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="W5P-aW-zLD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TuV-AJ-QYt" secondAttribute="bottom" id="nPI-CQ-OFP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="322.46376811594206" y="-54.575892857142854"/>
+        </view>
+    </objects>
+</document>

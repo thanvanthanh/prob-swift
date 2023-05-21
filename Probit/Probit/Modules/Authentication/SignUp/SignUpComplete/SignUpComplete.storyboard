@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up Complete View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignUpCompleteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignUpCompleteViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="omS-rz-mie">
+                                <rect key="frame" x="0.0" y="323.5" width="414" height="70"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7o5-1P-UgI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_signup_complete" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-hf-MFI">
+                                                <rect key="frame" x="172" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="Pfp-i4-zhI"/>
+                                                    <constraint firstAttribute="height" constant="70" id="RUm-AT-cPv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Dzc-hf-MFI" firstAttribute="top" secondItem="7o5-1P-UgI" secondAttribute="top" id="DJW-GU-lZJ"/>
+                                            <constraint firstItem="Dzc-hf-MFI" firstAttribute="centerX" secondItem="7o5-1P-UgI" secondAttribute="centerX" id="I4z-rM-squ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dzc-hf-MFI" secondAttribute="bottom" id="RhN-Oi-Aqn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="sXK-hw-Iri"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pe3-MN-scW">
+                                <rect key="frame" x="0.0" y="446.5" width="414" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i33-AY-MMm">
+                                <rect key="frame" x="0.0" y="417.5" width="414" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.24313725490196078" green="0.19607843137254902" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i33-AY-MMm" firstAttribute="top" secondItem="omS-rz-mie" secondAttribute="bottom" constant="24" id="2Qf-Ju-Uta"/>
+                            <constraint firstItem="i33-AY-MMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Ob-FD-idU"/>
+                            <constraint firstItem="pe3-MN-scW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B40-bv-i03"/>
+                            <constraint firstItem="omS-rz-mie" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fgM-Ck-Ses"/>
+                            <constraint firstItem="omS-rz-mie" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h8v-Lx-rWZ"/>
+                            <constraint firstItem="pe3-MN-scW" firstAttribute="top" secondItem="i33-AY-MMm" secondAttribute="bottom" constant="5" id="kza-ZO-pM7"/>
+                            <constraint firstItem="pe3-MN-scW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="py4-uL-Rnr"/>
+                            <constraint firstItem="pe3-MN-scW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xg1-Yg-bqA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="omS-rz-mie" secondAttribute="trailing" id="xq4-gD-zsF"/>
+                            <constraint firstItem="omS-rz-mie" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yEg-8a-XRi"/>
+                            <constraint firstItem="i33-AY-MMm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z4y-4V-zsf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="completeTitle" destination="i33-AY-MMm" id="DO8-5P-a97"/>
+                        <outlet property="willReturnLabel" destination="pe3-MN-scW" id="79M-MN-2F1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_signup_complete" width="72" height="72"/>
+    </resources>
+</document>

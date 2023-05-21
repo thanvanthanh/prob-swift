@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Medium</string>
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Input Pin View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="InputPinViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InputPinViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txi-wN-XID">
+                                <rect key="frame" x="182.5" y="116" width="49" height="24"/>
+                                <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBN-Hx-VGn">
+                                <rect key="frame" x="189.5" y="144" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ud-QC-0wF" customClass="StyleButton" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="786" width="382" height="56"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.19215686269999999" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="hf8-6q-fzI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJ6-rP-XfR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lY-zl-Uf0" customClass="InputPinTextField" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="16" y="185" width="382" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="50" id="AB8-Y8-Zv1" customClass="inpu"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nfe-PP-WAU">
+                                <rect key="frame" x="16" y="235" width="382" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJo-J5-TE8">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="12"/>
+                                        <color key="textColor" name="color_f25d4e"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2p-CD-zSY">
+                                        <rect key="frame" x="0.0" y="14.5" width="382" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="gzE-GB-AvT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                        <color key="tintColor" name="color_4231c8"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <fontDescription key="titleFontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAV-u7-jbm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3Y-RI-rJz">
+                                <rect key="frame" x="0.0" y="48" width="414" height="738"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-xc-aa7">
+                                        <rect key="frame" x="182.5" y="68" width="49" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="20"/>
+                                        <color key="textColor" name="color_282828_fafafa"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-dZ-mwp" customClass="InputPinTextField" customModule="Probit" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="116" width="382" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="70" id="Gmi-TC-WBk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="color_e6e6e6_646464"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="color_fafafa_181818"/>
+                                <constraints>
+                                    <constraint firstItem="gTg-dZ-mwp" firstAttribute="top" secondItem="UdZ-xc-aa7" secondAttribute="bottom" constant="24" id="4yy-op-kPM"/>
+                                    <constraint firstItem="UdZ-xc-aa7" firstAttribute="top" secondItem="M3Y-RI-rJz" secondAttribute="top" constant="68" id="L8N-U0-3dS"/>
+                                    <constraint firstAttribute="trailing" secondItem="gTg-dZ-mwp" secondAttribute="trailing" constant="16" id="YNA-XO-jGb"/>
+                                    <constraint firstItem="UdZ-xc-aa7" firstAttribute="centerX" secondItem="M3Y-RI-rJz" secondAttribute="centerX" id="g4L-uH-tOe"/>
+                                    <constraint firstItem="gTg-dZ-mwp" firstAttribute="leading" secondItem="M3Y-RI-rJz" secondAttribute="leading" constant="16" id="q2G-ZB-Eih"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="nfe-PP-WAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="2MD-nL-t2g"/>
+                            <constraint firstAttribute="trailing" secondItem="nfe-PP-WAU" secondAttribute="trailing" constant="16" id="2Rs-rX-W38"/>
+                            <constraint firstItem="8lY-zl-Uf0" firstAttribute="top" secondItem="zBN-Hx-VGn" secondAttribute="bottom" constant="24" id="Gep-E4-8Nq"/>
+                            <constraint firstItem="8lY-zl-Uf0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IRs-ra-eyL"/>
+                            <constraint firstItem="M3Y-RI-rJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iop-ez-Ba5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ud-QC-0wF" secondAttribute="trailing" constant="16" id="LBh-w1-8mr"/>
+                            <constraint firstItem="zBN-Hx-VGn" firstAttribute="top" secondItem="txi-wN-XID" secondAttribute="bottom" constant="4" id="LMz-Ad-Vk8"/>
+                            <constraint firstItem="nfe-PP-WAU" firstAttribute="top" secondItem="8lY-zl-Uf0" secondAttribute="bottom" id="PDD-gR-XGN"/>
+                            <constraint firstItem="M3Y-RI-rJz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PdY-wJ-VfP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8lY-zl-Uf0" secondAttribute="trailing" constant="16" id="hqb-BZ-cXb"/>
+                            <constraint firstItem="3Ud-QC-0wF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ijP-Tu-qg2"/>
+                            <constraint firstItem="zBN-Hx-VGn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iw3-Iq-hv0"/>
+                            <constraint firstItem="3Ud-QC-0wF" firstAttribute="top" secondItem="M3Y-RI-rJz" secondAttribute="bottom" id="jzm-dZ-u04"/>
+                            <constraint firstItem="txi-wN-XID" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lMD-5O-K90"/>
+                            <constraint firstItem="txi-wN-XID" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="u9D-8j-0fV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M3Y-RI-rJz" secondAttribute="trailing" id="wqE-Tt-2Lm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Ud-QC-0wF" secondAttribute="bottom" constant="20" id="xqf-dp-JtN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraintConfirmButton" destination="xqf-dp-JtN" id="oi4-bE-fMU"/>
+                        <outlet property="confirmButton" destination="3Ud-QC-0wF" id="dWu-zp-oR5"/>
+                        <outlet property="confirmInputPinView" destination="gTg-dZ-mwp" id="tEf-T6-dXR"/>
+                        <outlet property="confirmTitle" destination="UdZ-xc-aa7" id="OWj-ef-08g"/>
+                        <outlet property="confirmView" destination="M3Y-RI-rJz" id="ABv-0Z-CWD"/>
+                        <outlet property="failedCounterMessage" destination="uJo-J5-TE8" id="Yhs-dc-8Hz"/>
+                        <outlet property="forgotButton" destination="l2p-CD-zSY" id="ZH2-hr-1kT"/>
+                        <outlet property="inputPinSubTitle" destination="zBN-Hx-VGn" id="hsQ-36-eSO"/>
+                        <outlet property="inputPinTitle" destination="txi-wN-XID" id="OnP-5A-ykt"/>
+                        <outlet property="inputPinView" destination="8lY-zl-Uf0" id="IZJ-Ob-0To"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_4231c8">
+            <color red="0.25882352941176473" green="0.19215686274509805" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_e6e6e6_646464">
+            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_f25d4e">
+            <color red="0.94901960784313721" green="0.36470588235294116" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeBannerSection" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="J1D-I6-Ikx" id="NKm-9o-h5X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="J1D-I6-Ikx" customClass="InfiniteCollectionView" customModule="InfiniteLayout">
+                    <rect key="frame" x="0.0" y="44" width="548" height="292"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="J1D-I6-Ikx" secondAttribute="height" multiplier="375/153" priority="750" id="5KF-9g-XcJ"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e19-HE-uWV">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="J1D-I6-Ikx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4JL-lz-fVj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="J1D-I6-Ikx" secondAttribute="trailing" id="74K-Ti-KYG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="J1D-I6-Ikx" secondAttribute="bottom" id="aVI-sP-bQZ"/>
+                <constraint firstItem="J1D-I6-Ikx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cl9-ta-cbY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="234.78260869565219" y="-100.44642857142857"/>
+        </view>
+    </objects>
+</document>

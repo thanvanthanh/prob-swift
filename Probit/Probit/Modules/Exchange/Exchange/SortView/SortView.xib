@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortView" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="mCV-kC-Aty" id="coT-Yc-UGO"/>
+                <outlet property="iconDown" destination="7L6-tj-4Iu" id="OM0-bw-3vK"/>
+                <outlet property="iconUp" destination="fBU-eW-Qim" id="HFG-qY-rD4"/>
+                <outlet property="mainStackView" destination="sIN-Np-gA5" id="4AB-e6-PGv"/>
+                <outlet property="nameLabel" destination="eAV-ce-isb" id="RV9-1a-DCB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-kC-Aty">
+                    <rect key="frame" x="0.0" y="44" width="379" height="67"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sIN-Np-gA5">
+                            <rect key="frame" x="0.0" y="0.0" width="379" height="67"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VR-PO-i6d">
+                                    <rect key="frame" x="0.0" y="8.5" width="0.0" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" id="h7d-qr-ywX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYJ-pQ-Pk3">
+                                    <rect key="frame" x="10" y="2" width="341" height="63"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Trading Pair" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAV-ce-isb">
+                                            <rect key="frame" x="0.0" y="0.0" width="67.5" height="63"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="12"/>
+                                            <color key="textColor" name="color_424242_7b7b7b"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="eAV-ce-isb" secondAttribute="bottom" id="FO0-Tc-F7x"/>
+                                        <constraint firstItem="eAV-ce-isb" firstAttribute="leading" secondItem="OYJ-pQ-Pk3" secondAttribute="leading" id="tFc-8P-ap4"/>
+                                        <constraint firstItem="eAV-ce-isb" firstAttribute="top" secondItem="OYJ-pQ-Pk3" secondAttribute="top" id="zW2-G7-Vef"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sge-Zg-Ddk">
+                                    <rect key="frame" x="361" y="26" width="8" height="15"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_exchange_up" translatesAutoresizingMaskIntoConstraints="NO" id="fBU-eW-Qim">
+                                            <rect key="frame" x="0.0" y="0.0" width="8" height="5"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_exchange_down" translatesAutoresizingMaskIntoConstraints="NO" id="7L6-tj-4Iu">
+                                            <rect key="frame" x="0.0" y="10" width="8" height="5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="8" id="VdY-UT-1iz"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6D-a5-34c">
+                                    <rect key="frame" x="379" y="8.5" width="0.0" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" id="stZ-Sd-8sv"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sIN-Np-gA5" secondAttribute="bottom" id="SMz-eC-QZd"/>
+                        <constraint firstItem="sIN-Np-gA5" firstAttribute="top" secondItem="mCV-kC-Aty" secondAttribute="top" id="Wzo-9k-ed4"/>
+                        <constraint firstItem="sIN-Np-gA5" firstAttribute="leading" secondItem="mCV-kC-Aty" secondAttribute="leading" id="bIb-ZH-QFV"/>
+                        <constraint firstAttribute="trailing" secondItem="sIN-Np-gA5" secondAttribute="trailing" id="cOO-ZR-Wnf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mCV-kC-Aty" secondAttribute="bottom" id="eaR-Lz-O0A"/>
+                <constraint firstItem="mCV-kC-Aty" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="o1B-gu-PdR"/>
+                <constraint firstItem="mCV-kC-Aty" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qkC-VE-EQL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mCV-kC-Aty" secondAttribute="trailing" id="t94-yy-Ra8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-183.33333333333334" y="-101.45089285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_exchange_down" width="8" height="5"/>
+        <image name="ico_exchange_up" width="8" height="5"/>
+        <namedColor name="color_424242_7b7b7b">
+            <color red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

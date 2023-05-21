@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ExchangeViewController" customModule="Probit" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-Kz-0kG" customClass="MenuBarView" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aWF-fI-jMx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qt-yF-zEo">
+                                <rect key="frame" x="0.0" y="92" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="C3Y-lb-lVq">
+                                        <rect key="frame" x="10" y="5" width="394" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-Xx-UST" customClass="SortView" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tj-rP-hmi" customClass="SortView" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="98.5" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-ZA-650" customClass="SortView" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="226.5" y="0.0" width="79" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRo-om-W4q" customClass="SortView" customModule="Probit" customModuleProvider="target">
+                                                <rect key="frame" x="310.5" y="0.0" width="83.5" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2Tj-rP-hmi" firstAttribute="width" secondItem="C3Y-lb-lVq" secondAttribute="width" multiplier="0.25" id="2nc-4O-Dnp"/>
+                                            <constraint firstItem="wYd-Xx-UST" firstAttribute="width" secondItem="C3Y-lb-lVq" secondAttribute="width" multiplier="0.3" id="gi4-Fb-6am"/>
+                                            <constraint firstItem="vm8-ZA-650" firstAttribute="width" secondItem="C3Y-lb-lVq" secondAttribute="width" multiplier="0.2" id="hpy-YG-vcz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rp1-x4-A4u">
+                                        <rect key="frame" x="0.0" y="49" width="414" height="1"/>
+                                        <color key="backgroundColor" name="color_e6e6e6_424242"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="KOU-CM-Pft"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rp1-x4-A4u" secondAttribute="trailing" id="0DW-pS-Sxi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rp1-x4-A4u" secondAttribute="bottom" id="6jt-if-Brc"/>
+                                    <constraint firstItem="C3Y-lb-lVq" firstAttribute="top" secondItem="3qt-yF-zEo" secondAttribute="top" constant="5" id="Ozm-TN-6Hm"/>
+                                    <constraint firstAttribute="trailing" secondItem="C3Y-lb-lVq" secondAttribute="trailing" constant="10" id="QI9-Wc-De7"/>
+                                    <constraint firstAttribute="height" constant="50" id="QN7-89-yEg"/>
+                                    <constraint firstAttribute="bottom" secondItem="C3Y-lb-lVq" secondAttribute="bottom" constant="5" id="Tti-st-Mdt"/>
+                                    <constraint firstItem="C3Y-lb-lVq" firstAttribute="leading" secondItem="3qt-yF-zEo" secondAttribute="leading" constant="10" id="rJe-HG-ZWu"/>
+                                    <constraint firstItem="Rp1-x4-A4u" firstAttribute="leading" secondItem="3qt-yF-zEo" secondAttribute="leading" id="tmI-ao-Nxq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-Yk-GxY" customClass="PageViewController" customModule="Probit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="142" width="414" height="720"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_fafafa_181818"/>
+                        <constraints>
+                            <constraint firstItem="K3N-Yk-GxY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Dc-z3-dHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qt-yF-zEo" secondAttribute="trailing" id="ApU-k0-kke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TeF-Kz-0kG" secondAttribute="trailing" id="Gkc-dS-v21"/>
+                            <constraint firstItem="3qt-yF-zEo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OJf-LL-YBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K3N-Yk-GxY" secondAttribute="bottom" id="Vo1-oO-Bp1"/>
+                            <constraint firstItem="TeF-Kz-0kG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jir-fW-A7W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K3N-Yk-GxY" secondAttribute="trailing" id="mW5-5N-m12"/>
+                            <constraint firstItem="K3N-Yk-GxY" firstAttribute="top" secondItem="3qt-yF-zEo" secondAttribute="bottom" id="sf1-wb-wOW"/>
+                            <constraint firstItem="3qt-yF-zEo" firstAttribute="top" secondItem="TeF-Kz-0kG" secondAttribute="bottom" id="vRN-OZ-YCE"/>
+                            <constraint firstItem="TeF-Kz-0kG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vWY-hc-p9e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeSortView" destination="vm8-ZA-650" id="LbF-3E-5Bk"/>
+                        <outlet property="menuBarView" destination="TeF-Kz-0kG" id="1vi-uO-DK0"/>
+                        <outlet property="pageViewController" destination="K3N-Yk-GxY" id="eLu-tG-WfT"/>
+                        <outlet property="priceSortView" destination="2Tj-rP-hmi" id="abW-jc-DKE"/>
+                        <outlet property="tradingPairSortView" destination="wYd-Xx-UST" id="evt-FI-xFe"/>
+                        <outlet property="volSortView" destination="dRo-om-W4q" id="mZa-0a-Fof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_e6e6e6_424242">
+            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_fafafa_181818">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

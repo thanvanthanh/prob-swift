@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromotionHeader" customModule="Probit" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImage" destination="e6Z-A3-38t" id="Qzi-37-W0w"/>
+                <outlet property="promotionLabel" destination="I7m-Qy-FPJ" id="2GS-Xz-NML"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmH-4u-96C">
+                    <rect key="frame" x="0.0" y="24" width="261" height="44"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cXb-zj-RrY">
+                            <rect key="frame" x="0.0" y="0.0" width="261" height="34"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_promotion" translatesAutoresizingMaskIntoConstraints="NO" id="e6Z-A3-38t">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="zh7-dH-OU5"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJr-MY-VI3">
+                                    <rect key="frame" x="28" y="0.0" width="233" height="34"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7m-Qy-FPJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
+                                            <fontDescription key="fontDescription" name="SFPro-Medium" family="SF Pro" pointSize="14"/>
+                                            <color key="textColor" name="color_282828_fafafa"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="I7m-Qy-FPJ" firstAttribute="top" secondItem="kJr-MY-VI3" secondAttribute="top" id="0hd-aB-Aa9"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I7m-Qy-FPJ" secondAttribute="trailing" id="2WO-Y0-kId"/>
+                                        <constraint firstAttribute="bottom" secondItem="I7m-Qy-FPJ" secondAttribute="bottom" id="Mpk-ee-59I"/>
+                                        <constraint firstItem="I7m-Qy-FPJ" firstAttribute="leading" secondItem="kJr-MY-VI3" secondAttribute="leading" id="qFC-My-mfb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cXb-zj-RrY" secondAttribute="trailing" id="0WK-t3-jV6"/>
+                        <constraint firstItem="cXb-zj-RrY" firstAttribute="leading" secondItem="UmH-4u-96C" secondAttribute="leading" id="3tt-GS-uer"/>
+                        <constraint firstItem="cXb-zj-RrY" firstAttribute="top" secondItem="UmH-4u-96C" secondAttribute="top" id="jAu-as-IBD"/>
+                        <constraint firstAttribute="bottom" secondItem="cXb-zj-RrY" secondAttribute="bottom" constant="10" id="kGF-EN-WaP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UmH-4u-96C" secondAttribute="bottom" id="NrJ-qx-T5V"/>
+                <constraint firstItem="UmH-4u-96C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="Sn2-Bd-fkG"/>
+                <constraint firstAttribute="trailing" secondItem="UmH-4u-96C" secondAttribute="trailing" id="b9q-5W-rfg"/>
+                <constraint firstItem="UmH-4u-96C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gKq-kj-ieG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-185.38461538461539" y="-255.21327014218008"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_promotion" width="20" height="20"/>
+        <namedColor name="color_282828_fafafa">
+            <color red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

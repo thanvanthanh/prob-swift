@@ -1,0 +1,18 @@
+//
+//  Release.xcconfig
+//  Probit
+//
+//  Created by Thân Văn Thanh on 21/11/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "./Pods/Target Support Files/Pods-Probit/Pods-Probit.release.xcconfig"
+
+PRODUCT_NAME = Probit
+APP_NAME = Probit
+PRODUCT_BUNDLE_IDENTIFIER = com.probit.app.ios.dev.global //com.probit.app.ios.release.global
+MARKETING_VERSION = 1.24
+CURRENT_PROJECT_VERSION = 137
+OTHER_SWIFT_FLAGS = -D ENDPOINT_RELEASE

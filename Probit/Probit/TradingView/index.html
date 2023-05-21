@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Probit TradingView Chart</title>
+
+    <!-- Fix for iOS Safari zooming bug -->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+
+    <script
+      type="text/javascript"
+      src="charting_library/charting_library.standalone.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="datafeeds/implementation/dist/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="datafeeds/implementation/dist/helpers.js"
+    ></script>
+
+    <script type="text/javascript">
+      let upColor = "#12C479";
+      let downColor = "#F25D4E";
+      let price = "";
+
+      const datafeed = new Datafeeds.ApiAndSocketCompatible();
+      function initOnReady() {
+        const widget = (window.tvWidget = new TradingView.widget({
+          // debug: true,
+          fullscreen: true,
+          symbol: "probit:BTC/USDT",
+          interval: 30,
+          container: "tv_chart_container",
+          datafeed: datafeed,
+          library_path: "charting_library/",
+          disabled_features: [
+            "header_widget",
+            "left_toolbar",
+            "control_bar",
+            "timeframes_toolbar",
+            "main_series_scale_menu",
+            "header_saveload",
+            "display_market_status",
+            "property_pages",
+            "symbol_info",
+          ],
+          enabled_features: ["study_templates"],
+          overrides: {
+            "scalesProperties.showStudyLastValue": false,
+          },
+        })).onChartReady(function () {
+          draw2MALines();
+        });
+      }
+
+      function onSocketData(data) {
+        let item;
+        if (data && typeof data !== "object") {
+          data = JSON.parse(data);
+          item = data[0];
+          item = {
+            low: Number(item.low),
+            high: Number(item.high),
+            open: Number(item.open),
+            close: Number(item.close),
+            time: new Date(item.start_time).getTime(),
+            volume: Number(item.base_volume),
+          };
+        }
+        if (item !== undefined) {
+          datafeed.onRealtimeCallback(item);
+          datafeed.onResetCacheNeededCallback();
+        }
+      }
+
+      function onDataReceived(key, data) {
+        datafeed.onDataReceived(key, data);
+      }
+
+      function onInitChart(
+        symbol,
+        interval,
+        theme,
+        paramUpColor,
+        paramDownColor,
+        paramPrice
+      ) {
+        upColor = paramUpColor;
+        downColor = paramDownColor;
+        price = paramPrice;
+        console.log("====================================");
+        console.log("price and type = ", price, typeof paramPrice);
+        console.log("====================================");
+
+        updateCandleColor(upColor, downColor);
+        updateInterval(interval);
+        updateTheme(theme);
+        if (symbol && interval) {
+          window.tvWidget.activeChart().setSymbol(symbol, interval, () => {});
+        }
+        if (price !== "") {
+          updatePriceScale(price);
+        }
+      }
+
+      function updateTheme(theme) {
+        if (theme === "Dark") {
+          window.tvWidget.changeTheme("Dark");
+        } else {
+          window.tvWidget.changeTheme("Light");
+        }
+        updateCandleColor(upColor, downColor);
+        if (price !== "") {
+          updatePriceScale(price);
+        }
+      }
+
+      function updateInterval(interval) {
+        window.tvWidget.activeChart().setResolution(interval, () => {});
+      }
+
+      function updateTimezone(timezone) {
+        widget.tvWidget.activeChart().setTimezone(timezone);
+      }
+
+      function resetChart() {
+        window.tvWidget.activeChart().executeActionById("chartReset");
+        // window.tvWidget.activeChart().setResolution("30");
+      }
+
+      function draw2MALines(theme) {
+        window.tvWidget.activeChart().createStudy(
+          "Moving Average",
+          true,
+          true,
+          { length: 15 },
+          {
+            "Plot.linewidth": 1.3,
+            "Plot.color": "#FAA347",
+          }
+        );
+        window.tvWidget.activeChart().createStudy(
+          "Moving Average",
+          true,
+          true,
+          { length: 50 },
+          {
+            "Plot.linewidth": 1.3,
+            "Plot.color": "#75D7DE",
+          }
+        );
+      }
+
+      function updateCandleColor(upColor = "#12C479", downColor = "#F25D4E") {
+        setTimeout(() => {
+          window.tvWidget.applyOverrides({
+            "mainSeriesProperties.candleStyle.downColor": downColor,
+            "mainSeriesProperties.candleStyle.upColor": upColor,
+            "mainSeriesProperties.candleStyle.borderUpColor": upColor,
+            "mainSeriesProperties.candleStyle.borderDownColor": downColor,
+            "mainSeriesProperties.candleStyle.wickUpColor": upColor,
+            "mainSeriesProperties.candleStyle.wickDownColor": downColor,
+          });
+          updateVolumeColor(upColor, downColor);
+        }, 0);
+      }
+
+      function updateVolumeColor(upColor = "#12C479", downColor = "#F25D4E") {
+        window.tvWidget
+          .activeChart()
+          .getAllStudies()
+          .forEach(function (item) {
+            if (item.name === "Volume") {
+              window.tvWidget
+                .activeChart()
+                .getStudyById(item.id)
+                .applyOverrides({
+                  "volume.color.0": downColor,
+                  "volume.color.1": upColor,
+                });
+            }
+          });
+      }
+
+      function updatePriceScale(price) {
+        const decimal = Helpers.countDecimals(price);
+
+        if (decimal === 0) {
+          window.tvWidget.applyOverrides({
+            "mainSeriesProperties.minTick": `1,1,false`,
+          });
+          return;
+        }
+
+        let priceScale = "1";
+        for (let i = 0; i < decimal; i++) {
+          priceScale += "0";
+        }
+        window.tvWidget.applyOverrides({
+          "mainSeriesProperties.minTick": `${priceScale},1,false`,
+        });
+        window.tvWidget.applyStudiesOverrides({
+          "overlay.minTick": `${priceScale},1,false`,
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", initOnReady, false);
+    </script>
+  </head>
+
+  <body style="margin: 0px">
+    <div id="tv_chart_container"></div>
+  </body>
+</html>

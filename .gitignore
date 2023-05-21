@@ -1,0 +1,160 @@
+Probit/Podfile.lock
+Probit/Pods/Manifest.lock
+Probit/Pods/Alamofire/LICENSE
+Probit/Pods/Alamofire/README.md
+Probit/Pods/Alamofire/Source/AFError.swift
+Probit/Pods/Alamofire/Source/Alamofire.swift
+Probit/Pods/Alamofire/Source/AlamofireExtended.swift
+Probit/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+Probit/Pods/Alamofire/Source/CachedResponseHandler.swift
+Probit/Pods/Alamofire/Source/Combine.swift
+Probit/Pods/Alamofire/Source/Concurrency.swift
+Probit/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+Probit/Pods/Alamofire/Source/EventMonitor.swift
+Probit/Pods/Alamofire/Source/HTTPHeaders.swift
+Probit/Pods/Alamofire/Source/HTTPMethod.swift
+Probit/Pods/Alamofire/Source/MultipartFormData.swift
+Probit/Pods/Alamofire/Source/MultipartUpload.swift
+Probit/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+Probit/Pods/Alamofire/Source/Notifications.swift
+Probit/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+Probit/Pods/Alamofire/Source/ParameterEncoder.swift
+Probit/Pods/Alamofire/Source/ParameterEncoding.swift
+Probit/Pods/Alamofire/Source/Protected.swift
+Probit/Pods/Alamofire/Source/RedirectHandler.swift
+Probit/Pods/Alamofire/Source/Request.swift
+Probit/Pods/Alamofire/Source/RequestInterceptor.swift
+Probit/Pods/Alamofire/Source/RequestTaskMap.swift
+Probit/Pods/Alamofire/Source/Response.swift
+Probit/Pods/Alamofire/Source/ResponseSerialization.swift
+Probit/Pods/Alamofire/Source/Result+Alamofire.swift
+Probit/Pods/Alamofire/Source/RetryPolicy.swift
+Probit/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+Probit/Pods/Alamofire/Source/Session.swift
+Probit/Pods/Alamofire/Source/SessionDelegate.swift
+Probit/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+Probit/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+Probit/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+Probit/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+Probit/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+Probit/Pods/Alamofire/Source/Validation.swift
+Probit/Pods/Pods.xcodeproj/project.pbxproj
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/Alamofire.xcscheme
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/Pods-Probit-ProbitUITests.xcscheme
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/Pods-Probit.xcscheme
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/Pods-ProbitTests.xcscheme
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/xcschememanagement.plist
+Probit/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+Probit/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+Probit/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+Probit/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+Probit/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+Probit/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+Probit/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-acknowledgements.markdown
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-acknowledgements.plist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-dummy.m
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-frameworks-Debug-input-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-frameworks-Debug-output-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-frameworks-Release-input-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-frameworks-Release-output-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-frameworks.sh
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-Info.plist
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit-umbrella.h
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit.debug.xcconfig
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit.modulemap
+Probit/Pods/Target Support Files/Pods-Probit/Pods-Probit.release.xcconfig
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-acknowledgements.markdown
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-acknowledgements.plist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-dummy.m
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-frameworks-Debug-input-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-frameworks-Debug-output-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-frameworks-Release-input-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-frameworks-Release-output-files.xcfilelist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-frameworks.sh
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-Info.plist
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests-umbrella.h
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests.debug.xcconfig
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests.modulemap
+Probit/Pods/Target Support Files/Pods-Probit-ProbitUITests/Pods-Probit-ProbitUITests.release.xcconfig
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests-acknowledgements.markdown
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests-acknowledgements.plist
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests-dummy.m
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests-Info.plist
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests-umbrella.h
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests.debug.xcconfig
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests.modulemap
+Probit/Pods/Target Support Files/Pods-ProbitTests/Pods-ProbitTests.release.xcconfig
+Probit/Pods/Pods.xcodeproj/xcuserdata/beacon.xcuserdatad/xcschemes/SwiftLint.xcscheme
+Probit/Pods/SwiftLint/LICENSE
+Probit/Pods/SwiftLint/swiftlint
+Probit/Pods/Target Support Files/SwiftLint/SwiftLint.debug.xcconfig
+Probit/Pods/Target Support Files/SwiftLint/SwiftLint.release.xcconfig
+Probit/Pods/
+Probit/Probit.xcodeproj/project.xcworkspace/xcuserdata/dangnguyen.xcuserdatad/UserInterfaceState.xcuserstate
+Probit/Probit.xcodeproj/xcuserdata/dangnguyen.xcuserdatad/xcschemes/xcschememanagement.plist
+Probit/Probit.xcworkspace/xcuserdata/dangnguyen.xcuserdatad/UserInterfaceState.xcuserstate
+Probit/Probit.xcworkspace/xcuserdata/dangnguyen.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+
+# Xcode
+## User settings
+xcuserdata/
+recaptcha
+xcshareddata
+
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+.DS_Store
+.idea/
+*.generated.swift
+SetelSecrets.env
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/*
+!Carthage/Files/
+!Carthage/Files/**
+Carthage/Build/*
+!Carthage/Build/
+!Carthage/Build/*.xcframework
+!Carthage/Build/iOS
+!Carthage/Build/iOS/**
+!Carthage/Build/*.xcframework
+
+# UIComponents
+!UIComponents/build/
+
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+# Mockingbird
+*.xcodeproj/MockingbirdCache
+
+# Node
+node_modules
